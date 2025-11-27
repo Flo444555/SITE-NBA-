@@ -1,0 +1,14 @@
+# Windows
+Thumbs.db
+desktop.ini
+
+# macOS
+.DS_Store
+
+# Archives
+*.zip
+*.rar
+*.7z
+
+# Node (au cas où)
+node_modules/
