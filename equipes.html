@@ -1,214 +1,226 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Franchises NBA</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 
+  <!-- Styles spécifiques à la page franchises -->
   <style>
-
-    /* ===== BANNIÈRE ===== */
-    .teams-hero {
-      width: 100%;
-      height: 260px;
-      background-image: url('https://images.unsplash.com/photo-1518401549084-8898f9bc2683?q=80&auto=format&fit=crop&w=1600');
+    .franchises-hero {
+      position: relative;
+      border-radius: var(--radius);
+      padding: 2rem 1.6rem;
+      margin-bottom: 2rem;
+      overflow: hidden;
+      background-image: url('https://images.unsplash.com/photo-1483721310020-03333e577078?q=80&w=1600&auto=format&fit=crop');
       background-size: cover;
       background-position: center;
-      position: relative;
-      filter: brightness(0.55);
     }
-
-    .teams-hero-title {
-      position: absolute;
-      bottom: 25px;
-      left: 50%;
-      transform: translateX(-50%);
-      color: #fff;
-      font-size: 2.6rem;
-      font-weight: 800;
-      text-shadow: 0 4px 14px rgba(0,0,0,0.8);
-    }
-
-    /* WRAPPER */
-    .teams-wrapper {
-      background: rgba(5, 8, 22, 0.94);
-      padding-bottom: 4rem;
-    }
-
-    .teams-container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 2rem;
-      margin-top: -90px;
-    }
-
-    /* ==== CARTES ==== */
-    .team-card {
-      background: rgba(15, 23, 42, 0.92);
-      border-radius: 14px;
-      padding: 1.5rem;
-      box-shadow: 0 10px 28px rgba(0,0,0,0.55);
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-      border-left: 4px solid var(--accent);
-      position: relative;
-      overflow: hidden;
-      cursor: pointer;
-    }
-
-    .team-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 20px 45px rgba(0,0,0,0.7);
-    }
-
-    .team-card::before {
+    .franchises-hero::before {
       content: "";
       position: absolute;
-      top: -40%;
-      left: -40%;
-      width: 180%;
-      height: 180%;
-      background: radial-gradient(circle, rgba(249,115,22,0.25), transparent 70%);
-      opacity: 0;
-      transition: opacity .35s ease;
+      inset: 0;
+      background: radial-gradient(circle at top, rgba(15,23,42,0.15), rgba(15,23,42,0.90));
     }
-
-    .team-card:hover::before {
-      opacity: 1;
+    .franchises-hero-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 550px;
     }
-
-    /* ==== LOGOS ==== */
-    .team-logo {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      background: #fff;
-      padding: 6px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-      margin-bottom: 0.8rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.45);
-    }
-
-    .team-logo img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-
-    .team-title {
-      color: #fff;
-      font-size: 1.3rem;
-      font-weight: 700;
+    .franchises-hero h2 {
       margin-bottom: 0.4rem;
     }
-
-    .team-desc {
-      color: #d1d5db;
-      font-size: 0.95rem;
-      line-height: 1.6;
+    .franchises-hero p {
+      color: var(--muted);
+      max-width: 520px;
     }
 
-    /* GRID */
-    .teams-grid {
-      display: grid;
-      gap: 1.4rem;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    .team-card {
+      cursor: pointer;
     }
-
+    .team-link {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      height: 100%;
+    }
+    .team-logo {
+      width: 64px;
+      height: 64px;
+      border-radius: 999px;
+      background: #020617;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+      overflow: hidden;
+    }
+    .team-logo img {
+      width: 90%;
+      height: 90%;
+      object-fit: contain;
+    }
   </style>
 </head>
-
 <body>
+  <!-- HEADER commun -->
+  <header class="site-header">
+    <div class="container navwrap">
+      <div class="logo">NBA<span class="logo-dot">.</span></div>
+      <nav>
+        <ul class="main-nav">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="histoire.html">Histoire</a></li>
+          <li><a href="equipes.html">Franchises</a></li>
+          <li><a href="joueurs.html">Joueurs</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<header class="site-header">
-  <div class="container navwrap">
-    <div class="logo">NBA<span class="logo-dot">.</span></div>
-    <nav>
-      <ul class="main-nav">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="histoire.html">Histoire</a></li>
-        <li><a href="equipes.html" class="active">Franchises</a></li>
-        <li><a href="joueurs.html">Joueurs</a></li>
-        <li><a href="galerie.html">Galerie</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+  <main class="container page">
+    <header class="page-header">
+      <h1>Les franchises NBA</h1>
+      <p>Découvrez quelques équipes emblématiques qui ont marqué l’histoire de la ligue.</p>
+    </header>
 
-<!-- ===== BANNIÈRE ===== -->
-<div class="teams-hero"></div>
-<div class="teams-hero-title">Les franchises NBA</div>
+    <!-- Bannière -->
+    <section class="franchises-hero">
+      <div class="franchises-hero-inner">
+        <h2>Des équipes qui ont construit la légende</h2>
+        <p>
+          Showtime à Los Angeles, rivalité mythique à Boston, dynastie à Chicago ou révolution du tir à 3 points
+          avec Golden State… chaque franchise a son style, ses icônes et ses moments historiques.
+        </p>
+      </div>
+    </section>
 
-<div class="teams-wrapper">
-  <main class="teams-container">
-
+    <!-- Cartes équipes -->
     <section class="teams-grid">
 
       <!-- Lakers -->
-      <article class="team-card" onclick="location.href='https://www.nba.com/lakers'">
-        <div class="team-logo">
-          <img src="https://i.imgur.com/p5y47Hb.png" alt="Lakers">
-        </div>
-        <h3 class="team-title">Los Angeles Lakers</h3>
-        <p class="team-desc">Franchise mythique du Showtime et de nombreuses légendes.</p>
+      <article class="team-card">
+        <a class="team-link" href="https://www.nba.com/lakers" target="_blank" rel="noopener">
+          <div class="team-logo">
+            <img src="https://cdn.nba.com/logos/nba/1610612747/primary/L/logo.svg"
+                 alt="Logo Los Angeles Lakers">
+          </div>
+          <h2>Los Angeles Lakers</h2>
+          <p>
+            Franchise parmi les plus titrées, connue pour le “Showtime”, Kobe Bryant, Shaq et LeBron.
+            17 titres et une culture du spectacle permanente.
+          </p>
+        </a>
       </article>
 
       <!-- Celtics -->
-      <article class="team-card" onclick="location.href='https://www.nba.com/celtics'">
-        <div class="team-logo">
-          <img src="https://i.imgur.com/6l31pQK.png" alt="Celtics">
-        </div>
-        <h3 class="team-title">Boston Celtics</h3>
-        <p class="team-desc">Dynastie historique et culture d’excellence.</p>
+      <article class="team-card">
+        <a class="team-link" href="https://www.nba.com/celtics" target="_blank" rel="noopener">
+          <div class="team-logo">
+            <img src="https://cdn.nba.com/logos/nba/1610612738/primary/L/logo.svg"
+                 alt="Logo Boston Celtics">
+          </div>
+          <h2>Boston Celtics</h2>
+          <p>
+            Dynastie historique des années 60, les Celtics sont connus pour leur défense,
+            leur collectif et une culture de la gagne unique.
+          </p>
+        </a>
       </article>
 
       <!-- Bulls -->
-      <article class="team-card" onclick="location.href='https://www.nba.com/bulls'">
-        <div class="team-logo">
-          <img src="https://i.imgur.com/GnSxXPG.png" alt="Bulls">
-        </div>
-        <h3 class="team-title">Chicago Bulls</h3>
-        <p class="team-desc">L’équipe de Michael Jordan, icône mondiale.</p>
+      <article class="team-card">
+        <a class="team-link" href="https://www.nba.com/bulls" target="_blank" rel="noopener">
+          <div class="team-logo">
+            <img src="https://cdn.nba.com/logos/nba/1610612741/primary/L/logo.svg"
+                 alt="Logo Chicago Bulls">
+          </div>
+          <h2>Chicago Bulls</h2>
+          <p>
+            L’équipe de Michael Jordan et Scottie Pippen dans les années 90. Deux “three-peats”
+            et une aura mondiale qui dépasse le basket.
+          </p>
+        </a>
       </article>
 
       <!-- Warriors -->
-      <article class="team-card" onclick="location.href='https://www.nba.com/warriors'">
-        <div class="team-logo">
-          <img src="https://i.imgur.com/U9uv5NF.png" alt="Warriors">
-        </div>
-        <h3 class="team-title">Golden State Warriors</h3>
-        <p class="team-desc">Les maîtres du tir à 3 points et du jeu moderne.</p>
+      <article class="team-card">
+        <a class="team-link" href="https://www.nba.com/warriors" target="_blank" rel="noopener">
+          <div class="team-logo">
+            <img src="https://cdn.nba.com/logos/nba/1610612744/primary/L/logo.svg"
+                 alt="Logo Golden State Warriors">
+          </div>
+          <h2>Golden State Warriors</h2>
+          <p>
+            Révolutionnaires du tir à 3 points avec Stephen Curry, Klay Thompson et Draymond Green.
+            Une dynastie moderne basée sur le spacing et le mouvement.
+          </p>
+        </a>
       </article>
 
       <!-- Heat -->
-      <article class="team-card" onclick="location.href='https://www.nba.com/heat'">
-        <div class="team-logo">
-          <img src="https://i.imgur.com/pLPj4s5.png" alt="Heat">
-        </div>
-        <h3 class="team-title">Miami Heat</h3>
-        <p class="team-desc">Culture forte, intensité, mentalité de guerriers.</p>
+      <article class="team-card">
+        <a class="team-link" href="https://www.nba.com/heat" target="_blank" rel="noopener">
+          <div class="team-logo">
+            <img src="https://cdn.nba.com/logos/nba/1610612748/primary/L/logo.svg"
+                 alt="Logo Miami Heat">
+          </div>
+          <h2>Miami Heat</h2>
+          <p>
+            Une culture ultra exigeante, des titres avec Dwyane Wade, Shaq puis le trio LeBron-Wade-Bosh.
+            Franchise récente mais déjà très respectée.
+          </p>
+        </a>
       </article>
 
       <!-- Spurs -->
-      <article class="team-card" onclick="location.href='https://www.nba.com/spurs'">
-        <div class="team-logo">
-          <img src="https://i.imgur.com/CpAebpt.png" alt="Spurs">
-        </div>
-        <h3 class="team-title">San Antonio Spurs</h3>
-        <p class="team-desc">Collectif parfait et domination des années 2000.</p>
+      <article class="team-card">
+        <a class="team-link" href="https://www.nba.com/spurs" target="_blank" rel="noopener">
+          <div class="team-logo">
+            <img src="https://cdn.nba.com/logos/nba/1610612759/primary/L/logo.svg"
+                 alt="Logo San Antonio Spurs">
+          </div>
+          <h2>San Antonio Spurs</h2>
+          <p>
+            Une des équipes les plus régulières : Tim Duncan, Tony Parker, Manu Ginóbili
+            et le coaching de Gregg Popovich ont marqué les années 2000.
+          </p>
+        </a>
       </article>
 
     </section>
-
   </main>
-</div>
 
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Projet Master 1</h4>
+        <p>Site statique sur la NBA réalisé en HTML/CSS.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="histoire.html">Histoire</a></li>
+          <li><a href="equipes.html">Franchises</a></li>
+          <li><a href="joueurs.html">Joueurs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><i class="fa-regular fa-envelope"></i> nba-projet@example.com</p>
+      </div>
+    </div>
+    <div class="copyright">© 2025 – Site NBA</div>
+  </footer>
 </body>
 </html>
