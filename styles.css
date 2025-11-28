@@ -445,6 +445,14 @@ img { max-width: 100%; display: block; }
     flex-wrap: wrap;
     justify-content: flex-end;
   }
+  .timeline-item img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  margin-bottom: 0.8rem;
+  display: block;
+}
+
   .contact-grid {
     grid-template-columns: 1fr;
   }
