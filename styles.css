@@ -428,6 +428,14 @@ img { max-width: 100%; display: block; }
 }
 
 /* RESPONSIVE */
+.timeline-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 0.8rem;
+  border-radius: var(--radius);
+}
+
 
 @media (max-width: 800px) {
   .hero {
