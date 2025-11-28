@@ -1,44 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Histoire de la NBA</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 
-  <!-- Fond d'écran pour la page Histoire -->
   <style>
-    .history-bg {
+    /* ===== GRAND FOND D'ÉCRAN SANS BUG ===== */
+    body {
+      background: #050816;
+      overflow-x: hidden;
+    }
+
+    .histoire-bg {
       position: fixed;
       inset: 0;
-      background-image: url('https://images.unsplash.com/photo-1525973132219-a04334a760e3?q=80&w=1600&auto=format&fit=crop');
+      background-image: url('https://images.unsplash.com/photo-1504450758481-7338eba7524a?q=80&w=1600&auto=format&fit=crop');
       background-size: cover;
       background-position: center;
-      opacity: 0.20;
-      pointer-events: none;
-      z-index: -1;
+      z-index: -2;
+      opacity: 0.22;
+      filter: brightness(0.6) blur(2px);
     }
-    .history-main {
-      position: relative;
-      z-index: 1;
+
+    .content-wrapper {
+      background: rgba(5, 8, 22, 0.74);
+      min-height: 100vh;
+      padding-bottom: 3rem;
+    }
+
+    .histoire-container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .histoire-section {
+      background: rgba(15, 23, 42, 0.88);
+      padding: 1.8rem;
+      border-left: 4px solid #f97316;
+      border-radius: 12px;
+      margin-bottom: 1.6rem;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+    }
+
+    h2 {
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+
+    p {
+      color: #d1d5db;
+      font-size: 1rem;
+      line-height: 1.65;
     }
   </style>
 </head>
-<body>
-  <div class="history-bg"></div>
 
-  <!-- HEADER commun -->
+<body>
+
+  <!-- FOND D’ÉCRAN -->
+  <div class="histoire-bg"></div>
+
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container navwrap">
       <div class="logo">NBA<span class="logo-dot">.</span></div>
       <nav>
         <ul class="main-nav">
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="histoire.html">Histoire</a></li>
+          <li><a href="histoire.html" class="active">Histoire</a></li>
           <li><a href="equipes.html">Franchises</a></li>
           <li><a href="joueurs.html">Joueurs</a></li>
           <li><a href="galerie.html">Galerie</a></li>
@@ -49,120 +85,66 @@
   </header>
 
   <!-- CONTENU -->
-  <main class="container page history-main">
-    <header class="page-header">
-      <h1>Histoire de la NBA</h1>
-      <p>Un résumé clair des grandes périodes qui ont façonné la ligue.</p>
-    </header>
+  <div class="content-wrapper">
+    <main class="histoire-container">
 
-    <section class="timeline">
+      <header class="page-header">
+        <h1>Histoire de la NBA</h1>
+        <p>Découvrez les grandes périodes qui ont construit la ligue.</p>
+      </header>
 
-      <!-- 1. Débuts -->
-      <article class="timeline-item">
+      <!-- 1 -->
+      <section class="histoire-section">
         <h2>1946–1950 : les débuts</h2>
         <p>
-          La NBA trouve ses origines dans la BAA (Basketball Association of America), fondée en 1946.
-          En 1949, la BAA fusionne avec la NBL pour créer officiellement la National Basketball Association.
-          Les premières années posent les bases : règles modernisées, apparition du tir en suspension,
-          premières stars et premières salles mythiques comme le Boston Garden de l’époque.
+          La NBA trouve ses racines dans la BAA en 1946. En 1949, une fusion avec la NBL
+          donne naissance à la ligue telle qu’on la connaît. Le basket professionnel évolue
+          rapidement, les règles se modernisent et les premières stars émergent.
         </p>
-        <p>
-          Le jeu est encore lent et très physique, mais la ligue commence déjà à se structurer
-          autour de quelques franchises majeures et d’un calendrier régulier.
-        </p>
-      </article>
+      </section>
 
-      <!-- 2. Celtics -->
-      <article class="timeline-item">
+      <!-- 2 -->
+      <section class="histoire-section">
         <h2>1960s : domination des Boston Celtics</h2>
         <p>
-          Les années 60 sont marquées par une domination quasi totale des Boston Celtics
-          de Bill Russell : 11 titres en 13 saisons, un record absolu dans l’histoire du sport
-          collectif. Sous la houlette du coach Red Auerbach, les Celtics imposent un basket
-          collectif, dur en défense et très en avance tactiquement.
+          Une décennie mythique : les Celtics de Bill Russell remportent 11 titres en 13 ans.
+          Leur style collectif, la défense et le leadership de Red Auerbach posent les bases
+          de la philosophie moderne de la NBA.
         </p>
-        <p>
-          Cette période installe définitivement la NBA dans le paysage sportif américain
-          et pose les bases de la future rivalité avec les Lakers, qui affronteront souvent
-          Boston en Finales.
-        </p>
-      </article>
+      </section>
 
-      <!-- 3. Magic vs Bird -->
-      <article class="timeline-item">
+      <!-- 3 -->
+      <section class="histoire-section">
         <h2>1980s : Magic Johnson vs Larry Bird</h2>
         <p>
-          Les années 80 sont souvent vues comme l’âge d’or fondateur de la NBA moderne.
-          La rivalité entre les Los Angeles Lakers de Magic Johnson et les Boston Celtics
-          de Larry Bird attire des millions de téléspectateurs.
+          Les Lakers et les Celtics relancent la ligue avec une rivalité historique.
+          Showtime pour Los Angeles, rigueur pour Boston — un contraste qui attire des millions
+          de nouveaux fans et sauve la NBA de la faillite.
         </p>
-        <p>
-          Le “Showtime” des Lakers, basé sur le jeu rapide et spectaculaire, s’oppose au
-          basket plus dur et collectif des Celtics. Cette opposition de styles, de villes
-          et de personnalités fait exploser la popularité de la ligue aux États-Unis
-          et à l’international.
-        </p>
-      </article>
+      </section>
 
-      <!-- 4. Jordan -->
-      <article class="timeline-item">
+      <!-- 4 -->
+      <section class="histoire-section">
         <h2>1990s : l’ère Michael Jordan</h2>
         <p>
-          Dans les années 90, Michael Jordan et les Chicago Bulls prennent le relais.
-          Avec deux “three-peats” (1991-1993 puis 1996-1998), les Bulls dominent la ligue.
-          Jordan devient une véritable icône mondiale : il dépasse le simple cadre du sport,
-          influence la mode, la publicité et la culture populaire.
+          La NBA devient mondiale grâce à Michael Jordan. Avec les Chicago Bulls,
+          il réalise deux triplés (1991–93, 1996–98) et devient l’athlète le plus célèbre
+          de la planète. Une décennie historique.
         </p>
-        <p>
-          L’association avec Scottie Pippen, les systèmes de Phil Jackson et la défense
-          rugueuse de joueurs comme Dennis Rodman créent une équipe presque imbattable.
-          C’est aussi l’époque où la NBA commence à se diffuser massivement en Europe.
-        </p>
-      </article>
+      </section>
 
-      <!-- 5. Moderne -->
-      <article class="timeline-item">
-        <h2>2000–2020 : superteams et jeu moderne</h2>
+      <!-- 5 -->
+      <section class="histoire-section">
+        <h2>2000–2020 : le basket moderne</h2>
         <p>
-          Le basket évolue vers plus de vitesse et de tir à trois points. Les San Antonio Spurs
-          de Tim Duncan, puis le Miami Heat de LeBron James et enfin les Golden State Warriors
-          de Stephen Curry marquent chacun leur époque avec des “superteams” et des styles
-          très différents.
+          Kobe Bryant, Tim Duncan, LeBron James, Stephen Curry… Le jeu change :
+          tir à trois points, rythme rapide, superteams. La ligue s’internationalise
+          et devient un spectacle mondial suivi partout.
         </p>
-        <p>
-          La data et l’analyse statistique prennent de plus en plus de place. Les systèmes
-          offensifs s’ouvrent, les pivots s’éloignent du cercle, et la ligne à trois points
-          devient centrale. La NBA s’internationalise : de plus en plus de stars viennent
-          d’Europe, d’Afrique ou d’Asie, et la ligue devient un spectacle mondial suivi
-          en direct sur tous les continents.
-        </p>
-      </article>
+      </section>
 
-    </section>
-  </main>
+    </main>
+  </div>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <h4>Projet Master 1</h4>
-        <p>Site statique sur l'histoire de la NBA (HTML/CSS uniquement).</p>
-      </div>
-      <div>
-        <h4>Pages</h4>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="histoire.html">Histoire</a></li>
-          <li><a href="equipes.html">Franchises</a></li>
-          <li><a href="joueurs.html">Joueurs</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <p><i class="fa-regular fa-envelope"></i> nba-projet@example.com</p>
-      </div>
-    </div>
-    <div class="copyright">© 2025 – Histoire de la NBA</div>
-  </footer>
 </body>
 </html>
