@@ -1,57 +1,214 @@
-<section class="teams-grid">
+<!DOCTYPE html>
+<html lang="fr">
 
-  <!-- Lakers -->
-  <article class="team-card" onclick="location.href='https://www.nba.com/lakers'">
-    <div class="team-logo">
-      <img src="https://i.imgur.com/p5y47Hb.png" alt="Lakers">
-    </div>
-    <h3 class="team-title">Los Angeles Lakers</h3>
-    <p class="team-desc">Franchise mythique du Showtime et de nombreuses légendes.</p>
-  </article>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Franchises NBA</title>
 
-  <!-- Celtics -->
-  <article class="team-card" onclick="location.href='https://www.nba.com/celtics'">
-    <div class="team-logo">
-      <img src="https://i.imgur.com/6l31pQK.png" alt="Celtics">
-    </div>
-    <h3 class="team-title">Boston Celtics</h3>
-    <p class="team-desc">Dynastie historique, tradition, excellence et record de titres.</p>
-  </article>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 
-  <!-- Bulls -->
-  <article class="team-card" onclick="location.href='https://www.nba.com/bulls'">
-    <div class="team-logo">
-      <img src="https://i.imgur.com/GnSxXPG.png" alt="Bulls">
-    </div>
-    <h3 class="team-title">Chicago Bulls</h3>
-    <p class="team-desc">L'équipe de Michael Jordan, la popularité mondiale de la NBA.</p>
-  </article>
+  <style>
 
-  <!-- Warriors -->
-  <article class="team-card" onclick="location.href='https://www.nba.com/warriors'">
-    <div class="team-logo">
-      <img src="https://i.imgur.com/U9uv5NF.png" alt="Warriors">
-    </div>
-    <h3 class="team-title">Golden State Warriors</h3>
-    <p class="team-desc">Révolutionnaires du tir à 3 points et du jeu moderne rapide.</p>
-  </article>
+    /* ===== BANNIÈRE ===== */
+    .teams-hero {
+      width: 100%;
+      height: 260px;
+      background-image: url('https://images.unsplash.com/photo-1518401549084-8898f9bc2683?q=80&auto=format&fit=crop&w=1600');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      filter: brightness(0.55);
+    }
 
-  <!-- Heat -->
-  <article class="team-card" onclick="location.href='https://www.nba.com/heat'">
-    <div class="team-logo">
-      <img src="https://i.imgur.com/pLPj4s5.png" alt="Heat">
-    </div>
-    <h3 class="team-title">Miami Heat</h3>
-    <p class="team-desc">Culture forte, intensité, titres et défense de fer.</p>
-  </article>
+    .teams-hero-title {
+      position: absolute;
+      bottom: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #fff;
+      font-size: 2.6rem;
+      font-weight: 800;
+      text-shadow: 0 4px 14px rgba(0,0,0,0.8);
+    }
 
-  <!-- Spurs -->
-  <article class="team-card" onclick="location.href='https://www.nba.com/spurs'">
-    <div class="team-logo">
-      <img src="https://i.imgur.com/CpAebpt.png" alt="Spurs">
-    </div>
-    <h3 class="team-title">San Antonio Spurs</h3>
-    <p class="team-desc">Collectif parfait, discipline et domination des années 2000.</p>
-  </article>
+    /* WRAPPER */
+    .teams-wrapper {
+      background: rgba(5, 8, 22, 0.94);
+      padding-bottom: 4rem;
+    }
 
-</section>
+    .teams-container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem;
+      margin-top: -90px;
+    }
+
+    /* ==== CARTES ==== */
+    .team-card {
+      background: rgba(15, 23, 42, 0.92);
+      border-radius: 14px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 28px rgba(0,0,0,0.55);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      border-left: 4px solid var(--accent);
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .team-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 45px rgba(0,0,0,0.7);
+    }
+
+    .team-card::before {
+      content: "";
+      position: absolute;
+      top: -40%;
+      left: -40%;
+      width: 180%;
+      height: 180%;
+      background: radial-gradient(circle, rgba(249,115,22,0.25), transparent 70%);
+      opacity: 0;
+      transition: opacity .35s ease;
+    }
+
+    .team-card:hover::before {
+      opacity: 1;
+    }
+
+    /* ==== LOGOS ==== */
+    .team-logo {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #fff;
+      padding: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      margin-bottom: 0.8rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.45);
+    }
+
+    .team-logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .team-title {
+      color: #fff;
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+
+    .team-desc {
+      color: #d1d5db;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    /* GRID */
+    .teams-grid {
+      display: grid;
+      gap: 1.4rem;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container navwrap">
+    <div class="logo">NBA<span class="logo-dot">.</span></div>
+    <nav>
+      <ul class="main-nav">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="histoire.html">Histoire</a></li>
+        <li><a href="equipes.html" class="active">Franchises</a></li>
+        <li><a href="joueurs.html">Joueurs</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== BANNIÈRE ===== -->
+<div class="teams-hero"></div>
+<div class="teams-hero-title">Les franchises NBA</div>
+
+<div class="teams-wrapper">
+  <main class="teams-container">
+
+    <section class="teams-grid">
+
+      <!-- Lakers -->
+      <article class="team-card" onclick="location.href='https://www.nba.com/lakers'">
+        <div class="team-logo">
+          <img src="https://i.imgur.com/p5y47Hb.png" alt="Lakers">
+        </div>
+        <h3 class="team-title">Los Angeles Lakers</h3>
+        <p class="team-desc">Franchise mythique du Showtime et de nombreuses légendes.</p>
+      </article>
+
+      <!-- Celtics -->
+      <article class="team-card" onclick="location.href='https://www.nba.com/celtics'">
+        <div class="team-logo">
+          <img src="https://i.imgur.com/6l31pQK.png" alt="Celtics">
+        </div>
+        <h3 class="team-title">Boston Celtics</h3>
+        <p class="team-desc">Dynastie historique et culture d’excellence.</p>
+      </article>
+
+      <!-- Bulls -->
+      <article class="team-card" onclick="location.href='https://www.nba.com/bulls'">
+        <div class="team-logo">
+          <img src="https://i.imgur.com/GnSxXPG.png" alt="Bulls">
+        </div>
+        <h3 class="team-title">Chicago Bulls</h3>
+        <p class="team-desc">L’équipe de Michael Jordan, icône mondiale.</p>
+      </article>
+
+      <!-- Warriors -->
+      <article class="team-card" onclick="location.href='https://www.nba.com/warriors'">
+        <div class="team-logo">
+          <img src="https://i.imgur.com/U9uv5NF.png" alt="Warriors">
+        </div>
+        <h3 class="team-title">Golden State Warriors</h3>
+        <p class="team-desc">Les maîtres du tir à 3 points et du jeu moderne.</p>
+      </article>
+
+      <!-- Heat -->
+      <article class="team-card" onclick="location.href='https://www.nba.com/heat'">
+        <div class="team-logo">
+          <img src="https://i.imgur.com/pLPj4s5.png" alt="Heat">
+        </div>
+        <h3 class="team-title">Miami Heat</h3>
+        <p class="team-desc">Culture forte, intensité, mentalité de guerriers.</p>
+      </article>
+
+      <!-- Spurs -->
+      <article class="team-card" onclick="location.href='https://www.nba.com/spurs'">
+        <div class="team-logo">
+          <img src="https://i.imgur.com/CpAebpt.png" alt="Spurs">
+        </div>
+        <h3 class="team-title">San Antonio Spurs</h3>
+        <p class="team-desc">Collectif parfait et domination des années 2000.</p>
+      </article>
+
+    </section>
+
+  </main>
+</div>
+
+</body>
+</html>
