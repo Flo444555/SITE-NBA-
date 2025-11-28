@@ -10,38 +10,28 @@
   <link rel="stylesheet" href="styles.css">
 
   <style>
-    /* Fond d'écran FIXE (sans bug) */
-    body {
-      background: #050816;
-      overflow-x: hidden;
-    }
-
+    /* Nouveau fond NON FIXE (ne bugge pas quand on change d’onglet) */
     .histoire-bg {
-      position: fixed;
-      inset: 0;
+      width: 100%;
+      height: 300px;
       background-image: url('https://images.unsplash.com/photo-1504450758481-7338eba7524a?q=80&w=1600&auto=format&fit=crop');
       background-size: cover;
       background-position: center;
-      z-index: -2;
-      opacity: 0.28;
-      filter: brightness(0.6) blur(2px);
+      filter: brightness(0.55);
     }
 
-    /* Overlay supérieur */
-    .overlay {
-      background: rgba(5, 8, 22, 0.75);
-      min-height: 100vh;
+    .page-wrapper {
+      background: rgba(5, 8, 22, 0.95);
       padding-bottom: 4rem;
     }
 
-    /* Conteneur */
     .histoire-container {
       max-width: 1100px;
       margin: auto;
       padding: 2rem;
+      margin-top: -120px;
     }
 
-    /* Sections */
     .histoire-section {
       background: rgba(15, 23, 42, 0.88);
       padding: 1.8rem;
@@ -67,97 +57,76 @@
 
 <body>
 
-  <!-- FOND D'ÉCRAN -->
-  <div class="histoire-bg"></div>
-
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="container navwrap">
-      <div class="logo">NBA<span class="logo-dot">.</span></div>
-      <nav>
-        <ul class="main-nav">
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="histoire.html" class="active">Histoire</a></li>
-          <li><a href="equipes.html">Franchises</a></li>
-          <li><a href="joueurs.html">Joueurs</a></li>
-          <li><a href="galerie.html">Galerie</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <div class="overlay">
-
-    <main class="histoire-container">
-
-      <header class="page-header">
-        <h1>Histoire de la NBA</h1>
-        <p>Un résumé clair et complet des grandes périodes qui ont façonné la ligue.</p>
-      </header>
-
-      <!-- SECTION 1 -->
-      <section class="histoire-section">
-        <h2>1946–1950 : La création de la NBA</h2>
-        <p>
-          La NBA voit le jour en 1946 avec la naissance de la BAA, une ligue regroupant des équipes
-          issues des plus grandes villes américaines. En 1949, la BAA fusionne avec la NBL et devient
-          officiellement la National Basketball Association. Les premières années servent à poser les bases
-          du jeu moderne : organisation des franchises, développement des salles, premiers talents majeurs
-          et règles structurantes du basket professionnel.
-        </p>
-      </section>
-
-      <!-- SECTION 2 -->
-      <section class="histoire-section">
-        <h2>1960s : La dynastie des Boston Celtics</h2>
-        <p>
-          Les années 60 marquent un tournant historique avec la domination absolue des Boston Celtics.
-          Guidés par Bill Russell et coachés par Red Auerbach, les Celtics imposent un style collectif,
-          défensif et discipliné. Ils remportent 11 titres en 13 saisons, un record absolu dans l’histoire
-          du sport professionnel américain. Cette décennie fixe les standards de la compétitivité NBA.
-        </p>
-      </section>
-
-      <!-- SECTION 3 -->
-      <section class="histoire-section">
-        <h2>1980s : L’ère Magic–Bird</h2>
-        <p>
-          Après une période plus difficile, la NBA connaît un renouveau dans les années 80 grâce à la
-          rivalité mythique entre Magic Johnson (Los Angeles Lakers) et Larry Bird (Boston Celtics). Leur
-          affrontement sur le terrain, combiné à leurs personnalités opposées, propulse la ligue au premier
-          plan médiatique. Le “Showtime” des Lakers offre un jeu spectaculaire basé sur la vitesse et la
-          créativité, tandis que les Celtics perpétuent leur tradition d’excellence et de rigueur.
-        </p>
-      </section>
-
-      <!-- SECTION 4 -->
-      <section class="histoire-section">
-        <h2>1990s : Michael Jordan et la mondialisation du basket</h2>
-        <p>
-          Les années 90 appartiennent à Michael Jordan et aux Chicago Bulls.
-          Avec deux triplés (1991–1993 et 1996–1998), MJ marque définitivement l’histoire du sport.
-          Son style, son charisme et son impact médiatique font de lui l’athlète le plus célèbre au monde.
-          Sous son impulsion, la NBA devient un phénomène international grâce aux retransmissions TV, aux
-          Jeux Olympiques de 1992 et à l’essor du marketing sportif.
-        </p>
-      </section>
-
-      <!-- SECTION 5 -->
-      <section class="histoire-section">
-        <h2>2000–2020 : Le basket moderne et les superteams</h2>
-        <p>
-          Les années 2000 et 2010 transforment le basket : l’arrivée massive du tir à 3 points, l’importance
-          du spacing et la recherche d’un jeu plus rapide changent les stratégies. Les Lakers de Kobe Bryant,
-          les Spurs de Tim Duncan et plus tard les Warriors de Stephen Curry révolutionnent la ligue. Les
-          superteams, comme le Miami Heat de LeBron James, marquent une nouvelle ère où plusieurs stars
-          s’associent pour dominer la ligue.
-        </p>
-      </section>
-
-    </main>
-
+<header class="site-header">
+  <div class="container navwrap">
+    <div class="logo">NBA<span class="logo-dot">.</span></div>
+    <nav>
+      <ul class="main-nav">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="histoire.html" class="active">Histoire</a></li>
+        <li><a href="equipes.html">Franchises</a></li>
+        <li><a href="joueurs.html">Joueurs</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </div>
+</header>
+
+<!-- Nouveau header visuel -->
+<div class="histoire-bg"></div>
+
+<div class="page-wrapper">
+  <main class="histoire-container">
+
+    <header class="page-header">
+      <h1>Histoire de la NBA</h1>
+      <p>Un résumé clair et complet des grandes périodes qui ont façonné la ligue.</p>
+    </header>
+
+    <section class="histoire-section">
+      <h2>1946–1950 : La création de la NBA</h2>
+      <p>
+        La NBA naît en 1946 avec la BAA, avant de fusionner avec la NBL en 1949.
+        Les premières années définissent les règles et le fonctionnement du basket moderne.
+      </p>
+    </section>
+
+    <section class="histoire-section">
+      <h2>1960s : La dynastie des Boston Celtics</h2>
+      <p>
+        Les Celtics de Bill Russell écrasent la ligue avec 11 titres en 13 saisons.
+        Leur domination reste l’un des plus grands exploits du sport.
+      </p>
+    </section>
+
+    <section class="histoire-section">
+      <h2>1980s : Magic vs Bird</h2>
+      <p>
+        La rivalité Lakers–Celtics relance totalement la NBA.
+        Showtime contre rigueur : un choc qui révolutionne le basketball mondial.
+      </p>
+    </section>
+
+    <section class="histoire-section">
+      <h2>1990s : L’ère Michael Jordan</h2>
+      <p>
+        Jordan devient une icône mondiale et guide les Bulls vers six titres.
+        Les années 90 font entrer la NBA dans la culture populaire mondiale.
+      </p>
+    </section>
+
+    <section class="histoire-section">
+      <h2>2000–2020 : Le jeu moderne</h2>
+      <p>
+        Kobe, LeBron, Curry…
+        Le style de jeu devient plus rapide, orienté vers le tir à 3 points et les superteams.
+        Une transformation totale du basket.
+      </p>
+    </section>
+
+  </main>
+</div>
 
 </body>
 </html>
