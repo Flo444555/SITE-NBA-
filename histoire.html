@@ -1,38 +1,144 @@
-<section class="timeline">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Histoire de la NBA</title>
 
-  <!-- 1946–1950 -->
-  <article class="timeline-item">
-    <img src="https://i.imgur.com/qBLJz2N.jpeg" alt="NBA 1946">
-    <h2>1946–1950 : Les débuts</h2>
-    <p>La NBA débute après la fusion entre la BAA et la NBL, posant les bases du basket moderne.</p>
-  </article>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 
-  <!-- 1960s -->
-  <article class="timeline-item">
-    <img src="https://i.imgur.com/I3FscwE.jpeg" alt="1960s Celtics">
-    <h2>1960s : Domination des Celtics</h2>
-    <p>Bill Russell mène les Celtics à une domination historique avec 11 titres en 13 saisons.</p>
-  </article>
+  <style>
+    /* Fond d'écran comme la page d'accueil */
+    body {
+      background-image: url('https://images.unsplash.com/photo-1504450758481-7338eba7524a?q=80&w=1600&auto=format&fit=crop');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+    }
 
-  <!-- 1980s -->
-  <article class="timeline-item">
-    <img src="https://i.imgur.com/JfqdwQY.jpeg" alt="Magic vs Bird">
-    <h2>1980s : Magic vs Bird</h2>
-    <p>La rivalité Lakers–Celtics relance la NBA et transforme la ligue en spectacle mondial.</p>
-  </article>
+    /* Overlay sombre lisible */
+    .overlay {
+      background: rgba(5, 8, 22, 0.92);
+      min-height: 100vh;
+      padding-bottom: 4rem;
+    }
 
-  <!-- 1990s -->
-  <article class="timeline-item">
-    <img src="https://i.imgur.com/ckz2g8u.jpeg" alt="Michael Jordan">
-    <h2>1990s : L’ère Michael Jordan</h2>
-    <p>MJ et les Chicago Bulls deviennent une dynastie et font exploser la popularité mondiale du sport.</p>
-  </article>
+    /* Style des sections */
+    .histoire-container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem;
+    }
 
-  <!-- 2000–2020 -->
-  <article class="timeline-item">
-    <img src="https://i.imgur.com/fTJ3F9m.jpeg" alt="NBA moderne">
-    <h2>2000–2020 : Le jeu moderne</h2>
-    <p>Le tir à 3 points, la vitesse et les superteams redéfinissent totalement le style de jeu.</p>
-  </article>
+    .histoire-section {
+      background: rgba(15, 23, 42, 0.85);
+      padding: 1.5rem 1.8rem;
+      border-left: 4px solid #f97316;
+      border-radius: 12px;
+      margin-bottom: 1.6rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
 
-</section>
+    h2 {
+      margin-bottom: 0.6rem;
+      font-weight: 700;
+    }
+
+    p {
+      color: #d1d5db;
+      line-height: 1.6;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container navwrap">
+    <div class="logo">NBA<span class="logo-dot">.</span></div>
+    <nav>
+      <ul class="main-nav">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="histoire.html" class="active">Histoire</a></li>
+        <li><a href="equipes.html">Franchises</a></li>
+        <li><a href="joueurs.html">Joueurs</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="overlay">
+
+  <main class="histoire-container">
+
+    <header class="page-header">
+      <h1>Histoire de la NBA</h1>
+      <p>Un résumé complet des grandes périodes qui ont façonné la ligue.</p>
+    </header>
+
+    <!-- SECTION 1 -->
+    <section class="histoire-section">
+      <h2>1946–1950 : La création et les débuts</h2>
+      <p>
+        La NBA trouve son origine en 1946 avec la création de la BAA, une ligue ambitieuse qui regroupe 
+        plusieurs grandes villes américaines. En 1949, la fusion entre la BAA et la NBL donne officiellement 
+        naissance à la National Basketball Association. Les premières années servent à établir les règles, 
+        structurer les équipes et construire un sport encore jeune mais déjà spectaculaire. Ce sont les 
+        fondations de ce qui deviendra un phénomène mondial.
+      </p>
+    </section>
+
+    <!-- SECTION 2 -->
+    <section class="histoire-section">
+      <h2>1960s : L’hégémonie des Boston Celtics</h2>
+      <p>
+        Les années 60 marquent l’ère de la domination absolue des Boston Celtics, guidés par Bill Russell 
+        et le coach légendaire Red Auerbach. Avec 11 titres en 13 saisons, les Celtics imposent un style 
+        d’équipe unique basé sur la défense, l’altruisme et un collectif exceptionnel. Ils posent les bases 
+        d’une culture de victoire qui influence encore aujourd’hui la ligue.
+      </p>
+    </section>
+
+    <!-- SECTION 3 -->
+    <section class="histoire-section">
+      <h2>1980s : Showtime Lakers et rivalité Magic–Bird</h2>
+      <p>
+        Les années 80 relancent la NBA grâce à deux icônes : Magic Johnson (Lakers) et Larry Bird (Celtics). 
+        Leur opposition devient mythique et fait exploser la popularité du basket aux États-Unis. Les Lakers 
+        imposent le “Showtime”, un jeu rapide, créatif et spectaculaire, tandis que les Celtics maintiennent 
+        une rigueur et une intensité exemplaires. Cette rivalité sauve littéralement la NBA d'une crise financière.
+      </p>
+    </section>
+
+    <!-- SECTION 4 -->
+    <section class="histoire-section">
+      <h2>1990s : La domination de Michael Jordan</h2>
+      <p>
+        La décennie 90 appartient à Michael Jordan et aux Chicago Bulls. Avec deux three-peats (1991–93 et 
+        1996–98), Jordan devient une icône mondiale, au-delà du sport. La NBA s’internationalise grâce à son 
+        image, son style de jeu unique et son impact culturel. Les 90s font entrer la NBA dans une nouvelle ère 
+        globale.
+      </p>
+    </section>
+
+    <!-- SECTION 5 -->
+    <section class="histoire-section">
+      <h2>2000–2020 : L’ère moderne et les superteams</h2>
+      <p>
+        Les années 2000 et 2010 voient évoluer le basket moderne : tir à 3 points, vitesse, spacing et 
+        polyvalence. Les Lakers de Kobe, les Spurs de Duncan, puis les Warriors de Curry révolutionnent le jeu. 
+        L’arrivée de “superteams” comme le Miami Heat de LeBron James marque une nouvelle façon de construire 
+        des équipes dominantes. La NBA devient un spectacle mondial suivi par des centaines de millions de fans.
+      </p>
+    </section>
+
+  </main>
+
+</div>
+
+</body>
+</html>
