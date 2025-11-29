@@ -517,10 +517,13 @@ img { max-width: 100%; display: block; }
 @media (max-width: 768px) {
   .joueurs-container {
     grid-template-columns: 1fr;
-   }
+  }
+} /* ←←← FERMETURE MANQUANTE ICI */
+
 /* ==============================
    FOND FINAL JOUEURS
    ============================== */
+
 
 .section-joueurs {
   z-index: 0;
