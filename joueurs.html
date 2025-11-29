@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,36 +9,36 @@
   <link rel="stylesheet" href="styles.css">
 
   <style>
+
     /* ===== FOND ANIMÉ ===== */
     body {
       background-image: url('https://media.tenor.com/Z9HhYx---mAAAAAd/basketball-nba.gif');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
-      overflow-x: hidden;
     }
 
     .overlay {
-      background: rgba(5, 8, 22, 0.82);
+      background: rgba(5, 8, 22, 0.85);
       min-height: 100vh;
-      padding-bottom: 4rem;
+      padding-bottom: 3rem;
     }
 
-    /* ===== DISPOSITION EN 4 COINS ===== */
+    /* ===== GRID JOUEURS ===== */
     .players-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
-      padding-top: 2rem;
+      margin-top: 2rem;
     }
 
     .player-card {
-      background: rgba(15, 23, 42, 0.88);
-      border-radius: 14px;
+      background: rgba(15, 23, 42, 0.92);
       padding: 1.5rem;
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.55);
+      border-radius: 14px;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.6);
       text-align: center;
-      transition: transform 0.25s;
+      transition: 0.25s;
     }
 
     .player-card:hover {
@@ -47,8 +46,8 @@
     }
 
     .player-card img {
-      width: 220px;
-      height: 220px;
+      width: 210px;
+      height: 210px;
       object-fit: cover;
       border-radius: 12px;
       margin-bottom: 1rem;
@@ -57,11 +56,11 @@
     .actions-link {
       display: inline-block;
       margin-top: 0.8rem;
-      padding: 0.5rem 1rem;
+      padding: 0.6rem 1.3rem;
       background: #f97316;
       color: #111;
-      border-radius: 999px;
       font-weight: 600;
+      border-radius: 999px;
       text-decoration: none;
       transition: 0.2s;
     }
@@ -70,14 +69,12 @@
       background: #fb923c;
       transform: scale(1.05);
     }
-
   </style>
 
 </head>
 
 <body>
 
-  <!-- HEADER -->
   <header class="site-header">
     <div class="container navwrap">
       <div class="logo">NBA<span class="logo-dot">.</span></div>
@@ -95,59 +92,50 @@
   </header>
 
   <div class="overlay">
-
     <main class="container page">
+
       <header class="page-header">
         <h1>Joueurs légendaires</h1>
-        <p>Une sélection de quelques grandes figures de la ligue.</p>
+        <p>Les figures mythiques de la NBA.</p>
       </header>
 
-      <!-- GRID JOUEURS -->
       <section class="players-grid">
 
         <!-- Jordan -->
         <article class="player-card">
           <img src="https://i.imgur.com/VV2kW8C.png" alt="Michael Jordan">
           <h2>Michael Jordan</h2>
-          <p>6 titres NBA avec les Chicago Bulls. Icône ultime.</p>
-          <a class="actions-link" href="https://www.youtube.com/watch?v=LAr6oAKieHk" target="_blank">
-            Voir ses actions
-          </a>
+          <p>GOAT, 6 titres NBA.</p>
+          <a class="actions-link" href="https://www.youtube.com/watch?v=LAr6oAKieHk" target="_blank">Voir ses actions</a>
         </article>
 
         <!-- LeBron -->
         <article class="player-card">
           <img src="https://i.imgur.com/zmO7F0S.png" alt="LeBron James">
           <h2>LeBron James</h2>
-          <p>Longévité folle. Champion avec Miami, Cleveland, Lakers.</p>
-          <a class="actions-link" href="https://www.youtube.com/watch?v=4yMMg6Yb6xI" target="_blank">
-            Voir ses actions
-          </a>
+          <p>Longévité historique, champion 4 fois.</p>
+          <a class="actions-link" href="https://www.youtube.com/watch?v=4yMMg6Yb6xI" target="_blank">Voir ses actions</a>
         </article>
 
         <!-- Kobe -->
         <article class="player-card">
           <img src="https://i.imgur.com/3OMo9G9.png" alt="Kobe Bryant">
           <h2>Kobe Bryant</h2>
-          <p>5 titres. Légende des Lakers. Mentalité Mamba.</p>
-          <a class="actions-link" href="https://www.youtube.com/watch?v=8M8Yeq_QP2g" target="_blank">
-            Voir ses actions
-          </a>
+          <p>5 titres, Mamba Mentality.</p>
+          <a class="actions-link" href="https://www.youtube.com/watch?v=8M8Yeq_QP2g" target="_blank">Voir ses actions</a>
         </article>
 
         <!-- Curry -->
         <article class="player-card">
           <img src="https://i.imgur.com/o2M1o7F.png" alt="Stephen Curry">
           <h2>Stephen Curry</h2>
-          <p>Révolution du tir à 3 points. Star des Warriors.</p>
-          <a class="actions-link" href="https://www.youtube.com/watch?v=HStoFzzeUlc" target="_blank">
-            Voir ses actions
-          </a>
+          <p>Révolution du tir à 3 points.</p>
+          <a class="actions-link" href="https://www.youtube.com/watch?v=HStoFzzeUlc" target="_blank">Voir ses actions</a>
         </article>
 
       </section>
-    </main>
 
+    </main>
   </div>
 
 </body>
