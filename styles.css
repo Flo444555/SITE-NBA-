@@ -741,6 +741,17 @@ body {
   font-size: 0.9rem !important;
   color: #cbd5e1 !important;
 }
+.gallery-row-center {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.gallery-center {
+  width: 320px;
+}
+
 
 
 
