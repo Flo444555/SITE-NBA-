@@ -465,31 +465,7 @@ img { max-width: 100%; display: block; }
     grid-template-columns: 1fr;
   }
 }
-.section-joueurs {
-  position: relative;
-  padding: 60px 0;
-  background-image: url("images/fond-nba.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
-.section-joueurs::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(3, 7, 18, 0.8);
-}
-
-.joueurs-container {
-  position: relative;
-  max-width: 1100px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 40px;
-  padding: 0 20px;
-}
 
 .player-card {
   display: flex;
@@ -542,77 +518,9 @@ img { max-width: 100%; display: block; }
   .joueurs-container {
     grid-template-columns: 1fr;
    }
-}
-.section-joueurs {
-  position: relative;
-  padding: 60px 0;
-
-  /* FOND NBA (100% fonctionnel) */
-  background-image: url("https://i.imgur.com/1wJbKEl.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-/* Voile sombre pour lisibilité */
-.section-joueurs::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(3, 7, 18, 0.78);
-}
-
-.joueurs-container {
-  position: relative;
-}
-
-/* === FOND D'ÉCRAN POUR LA PAGE JOUEURS === */
-
-.section-joueurs {
-  position: relative;
-  padding: 60px 0;
-  
-  /* FOND NBA qui fonctionne toujours */
-  background-image: url("https://i.imgur.com/1wJbKEl.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.section-joueurs::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(3, 7, 18, 0.78);
-}
-/* ---- VRAI FOND DERRIÈRE LA SECTION JOUEURS ---- */
-
-.section-joueurs {
-  position: relative;
-  padding: 80px 0;
-}
-
-.section-joueurs::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  height: 100%;
-  background-image: url("https://i.imgur.com/1wJbKEl.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.25;   /* tu peux augmenter si tu veux plus visible */
-  z-index: 0;
-}
-
-.joueurs-container {
-  position: relative;
-  z-index: 1;
-}
-/* ==== FOND D'ÉCRAN QUI MARCHE POUR LA PAGE JOUEURS ==== */
+/* ==============================
+   FOND FINAL JOUEURS
+   ============================== */
 
 .section-joueurs {
   position: relative;
@@ -620,7 +528,6 @@ img { max-width: 100%; display: block; }
   overflow: hidden;
 }
 
-/* Fond derrière la section */
 .section-joueurs::before {
   content: "";
   position: absolute;
@@ -634,43 +541,7 @@ img { max-width: 100%; display: block; }
   background-position: center;
   background-repeat: no-repeat;
 
-  opacity: 0.25; /* augmente si tu veux un fond plus visible */
-  z-index: 0;
-}
-
-/* Le contenu doit passer AU-DESSUS du fond */
-.joueurs-container {
-  position: relative;
-  z-index: 1;
-}
-
-
-
-.joueurs-container {
-  position: relative;
-}
-/* ==== FOND D'ÉCRAN QUI MARCHE POUR LA PAGE JOUEURS ==== */
-
-.section-joueurs {
-  position: relative;
-  padding: 80px 0;
-  overflow: hidden;
-}
-
-.section-joueurs::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
-  background-image: url("https://images.unsplash.com/photo-1518579578205-4c04cd66bbf7?q=80&w=2070");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  opacity: 0.35; /* tu peux mettre 0.5 si tu veux plus clair */
+  opacity: 0.32;
   z-index: 0;
 }
 
