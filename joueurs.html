@@ -1,143 +1,37 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joueurs légendaires</title>
+<section class="section-joueurs">
+  <div class="joueurs-container">
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <!-- Michael Jordan -->
+    <a class="player-card" href="https://www.youtube.com/watch?v=jbW4f60dCNA" target="_blank" rel="noopener noreferrer">
+      <img src="images/mj.png" alt="Michael Jordan">
+      <h3>Michael Jordan</h3>
+      <p>6 titres NBA avec les Bulls, légende absolue du basket.</p>
+      <button class="btn-joueur">Voir ses actions</button>
+    </a>
 
-    <style>
+    <!-- LeBron James -->
+    <a class="player-card" href="https://www.youtube.com/watch?v=b117a8_jALE" target="_blank" rel="noopener noreferrer">
+      <img src="images/lebron.png" alt="LeBron James">
+      <h3>LeBron James</h3>
+      <p>Longévité historique, champion à Miami, Cleveland et L.A.</p>
+      <button class="btn-joueur">Voir ses actions</button>
+    </a>
 
-    /* ===== FOND D'ÉCRAN BASKET (0% VELO) ===== */
-    body {
-        background: url('https://wallpapercave.com/wp/wp2308404.jpg')
-        no-repeat center center fixed;
-        background-size: cover;
-    }
+    <!-- Kobe Bryant -->
+    <a class="player-card" href="https://www.youtube.com/watch?v=1fjhIWJSxfw" target="_blank" rel="noopener noreferrer">
+      <img src="images/kobe.png" alt="Kobe Bryant">
+      <h3>Kobe Bryant</h3>
+      <p>Icône des Lakers, 5 titres, mentalité Mamba.</p>
+      <button class="btn-joueur">Voir ses actions</button>
+    </a>
 
-    .overlay {
-        background: rgba(5, 8, 22, 0.88);
-        min-height: 100vh;
-        padding-bottom: 3rem;
-    }
+    <!-- Stephen Curry -->
+    <a class="player-card" href="https://www.youtube.com/watch?v=flm-cZ7r6eE" target="_blank" rel="noopener noreferrer">
+      <img src="images/curry.png" alt="Stephen Curry">
+      <h3>Stephen Curry</h3>
+      <p>A révolutionné le tir à 3 points.</p>
+      <button class="btn-joueur">Voir ses actions</button>
+    </a>
 
-    /* ==== GRILLE DES 4 JOUEURS ==== */
-    .players-layout {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 2rem;
-        margin-top: 2rem;
-    }
-
-    /* ===== CARTES ===== */
-    .player-card {
-        background: rgba(15, 23, 42, 0.92);
-        border-radius: 14px;
-        padding: 1.5rem;
-        box-shadow: 0 18px 40px rgba(0,0,0,0.65);
-        text-align: center;
-        transition: 0.25s;
-    }
-
-    .player-card:hover {
-        transform: translateY(-6px);
-    }
-
-    .player-card img {
-        width: 210px;
-        height: 210px;
-        object-fit: cover;
-        border-radius: 12px;
-        margin-bottom: 1rem;
-    }
-
-    .actions-link {
-        display: inline-block;
-        margin-top: 1rem;
-        padding: 0.6rem 1.3rem;
-        background: #f97316;
-        color: #111;
-        font-weight: 600;
-        border-radius: 999px;
-        text-decoration: none;
-        transition: 0.2s;
-    }
-
-    .actions-link:hover {
-        background: #fb923c;
-        transform: scale(1.05);
-    }
-
-    </style>
-</head>
-
-<body>
-
-<header class="site-header">
-    <div class="container navwrap">
-        <div class="logo">NBA<span class="logo-dot">.</span></div>
-        <nav>
-            <ul class="main-nav">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="histoire.html">Histoire</a></li>
-                <li><a href="equipes.html">Franchises</a></li>
-                <li><a href="joueurs.html" class="active">Joueurs</a></li>
-                <li><a href="galerie.html">Galerie</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-<div class="overlay">
-<main class="container page">
-
-<header class="page-header">
-    <h1>Joueurs légendaires</h1>
-    <p>Une sélection de quelques grandes figures de la NBA.</p>
-</header>
-
-<section class="players-layout">
-
-    <!-- MJ -->
-    <article class="player-card">
-        <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/893.png">
-        <h2>Michael Jordan</h2>
-        <p>6 titres NBA avec les Bulls, légende absolue du basket.</p>
-        <a class="actions-link" href="https://www.youtube.com/watch?v=PsgC8EO2Zr0" target="_blank">Voir ses actions</a>
-    </article>
-
-    <!-- LeBron -->
-    <article class="player-card">
-        <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png">
-        <h2>LeBron James</h2>
-        <p>Longévité historique, champion à Miami, Cleveland et L.A.</p>
-        <a class="actions-link" href="https://www.youtube.com/watch?v=5qHufLpbUqk" target="_blank">Voir ses actions</a>
-    </article>
-
-    <!-- Kobe -->
-    <article class="player-card">
-        <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/977.png">
-        <h2>Kobe Bryant</h2>
-        <p>Icône des Lakers, 5 titres, mentalité Mamba.</p>
-        <a class="actions-link" href="https://www.youtube.com/watch?v=Y5Vwffq30bE" target="_blank">Voir ses actions</a>
-    </article>
-
-    <!-- Curry -->
-    <article class="player-card">
-        <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/201939.png">
-        <h2>Stephen Curry</h2>
-        <p>A révolutionné le tir à 3 points.</p>
-        <a class="actions-link" href="https://www.youtube.com/watch?v=JfVuBa6gk5Y" target="_blank">Voir ses actions</a>
-    </article>
-
+  </div>
 </section>
-
-</main>
-</div>
-
-</body>
-</html>
