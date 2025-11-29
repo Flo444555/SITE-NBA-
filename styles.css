@@ -543,4 +543,27 @@ img { max-width: 100%; display: block; }
     grid-template-columns: 1fr;
    }
 }
+.section-joueurs {
+  position: relative;
+  padding: 60px 0;
+
+  /* FOND NBA (100% fonctionnel) */
+  background-image: url("https://i.imgur.com/1wJbKEl.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Voile sombre pour lisibilité */
+.section-joueurs::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(3, 7, 18, 0.78);
+}
+
+.joueurs-container {
+  position: relative;
+}
+
 
