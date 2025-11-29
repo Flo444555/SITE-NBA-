@@ -712,6 +712,36 @@ body {
   font-size: 0.85rem;
   color: #cbd5e1;
 }
+/* === FIX ULTRA PROPRE : toutes les images identiques === */
+
+.gallery-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)) !important;
+  gap: 20px !important;
+}
+
+.gallery-grid figure {
+  background: #0f172a !important;
+  border-radius: 14px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35) !important;
+}
+
+.gallery-grid img {
+  width: 100% !important;
+  height: 180px !important;         /* 🔥 TOUTES LES IMAGES IDENTIQUES */
+  object-fit: cover !important;
+  display: block !important;
+}
+
+.gallery-grid figcaption {
+  padding: 12px 15px !important;
+  font-size: 0.9rem !important;
+  color: #cbd5e1 !important;
+}
+
 
 
 
