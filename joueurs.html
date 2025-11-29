@@ -1,119 +1,33 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joueurs Légendaires</title>
+<section class="section-joueurs">
+    <div class="joueurs-container">
 
-    <link rel="stylesheet" href="styles.css">
+        <a class="player-card" href="https://www.youtube.com/watch?v=jbW4f60dCNA" target="_blank">
+            <img src="https://cdn.nba.com/headshots/nba/latest/260x190/893.png" alt="Michael Jordan">
+            <h3>Michael Jordan</h3>
+            <p>6 titres NBA avec les Bulls, légende absolue du basket.</p>
+            <button class="btn-joueur">Voir ses actions</button>
+        </a>
 
-    <style>
-        /* ---- FOND NBA ---- */
-        .section-joueurs {
-          position: relative;
-          padding: 60px 0;
-          background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/5/5a/NBA_75th_anniversary_logo.svg/1200px-NBA_75th_anniversary_logo.svg.png");
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-        }
+        <a class="player-card" href="https://www.youtube.com/watch?v=b117a8_jALE" target="_blank">
+            <img src="https://cdn.nba.com/headshots/nba/latest/260x190/2544.png" alt="LeBron James">
+            <h3>LeBron James</h3>
+            <p>Longévité historique, champion à Miami, Cleveland et LA.</p>
+            <button class="btn-joueur">Voir ses actions</button>
+        </a>
 
-        .section-joueurs::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          background: rgba(3, 7, 18, 0.78);
-        }
+        <a class="player-card" href="https://www.youtube.com/watch?v=1fjhIWJSxfw" target="_blank">
+            <img src="https://cdn.nba.com/headshots/nba/latest/260x190/977.png" alt="Kobe Bryant">
+            <h3>Kobe Bryant</h3>
+            <p>Icône des Lakers, 5 titres, mentalité Mamba.</p>
+            <button class="btn-joueur">Voir ses actions</button>
+        </a>
 
-        .joueurs-container {
-          position: relative;
-          max-width: 1100px;
-          margin: 0 auto;
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          gap: 40px;
-          padding: 0 20px;
-        }
+        <a class="player-card" href="https://www.youtube.com/watch?v=flm-cZ7r6eE" target="_blank">
+            <img src="https://cdn.nba.com/headshots/nba/latest/260x190/201939.png" alt="Stephen Curry">
+            <h3>Stephen Curry</h3>
+            <p>A révolutionné le tir à 3 points.</p>
+            <button class="btn-joueur">Voir ses actions</button>
+        </a>
 
-        .player-card {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          text-align: center;
-          background: #071120;
-          border-radius: 20px;
-          padding: 30px 20px 25px;
-          text-decoration: none;
-          color: white;
-          transition: 0.2s;
-        }
-
-        .player-card:hover {
-          transform: translateY(-6px);
-          box-shadow: 0 15px 30px rgba(0,0,0,0.4);
-        }
-
-        .player-card img {
-          width: 210px;
-          height: auto;
-          border-radius: 12px;
-          margin-bottom: 15px;
-        }
-
-        .btn-joueur {
-          border: none;
-          padding: 10px 22px;
-          border-radius: 999px;
-          font-weight: 600;
-          cursor: pointer;
-          background: #ff7a1a;
-          color: #1b1b1b;
-          margin-top: 12px;
-        }
-
-        @media (max-width: 768px) {
-          .joueurs-container {
-            grid-template-columns: 1fr;
-          }
-        }
-    </style>
-</head>
-
-<body>
-
-    <section class="section-joueurs">
-        <div class="joueurs-container">
-
-            <a class="player-card" href="https://www.youtube.com/watch?v=jbW4f60dCNA" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Michael_Jordan_in_2014.jpg/600px-Michael_Jordan_in_2014.jpg">
-                <h3>Michael Jordan</h3>
-                <p>6 titres NBA avec les Bulls, légende absolue du basket.</p>
-                <button class="btn-joueur">Voir ses actions</button>
-            </a>
-
-            <a class="player-card" href="https://www.youtube.com/watch?v=b117a8_jALE" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/LeBron_James_Lakers.jpg">
-                <h3>LeBron James</h3>
-                <p>Longévité historique, champion à Miami, Cleveland et L.A.</p>
-                <button class="btn-joueur">Voir ses actions</button>
-            </a>
-
-            <a class="player-card" href="https://www.youtube.com/watch?v=1fjhIWJSxfw" target="_blank">
-                <img src="https://upload.wikimedia.org/w.wikipedia/commons/5/56/Kobe_Bryant_2015.jpg">
-                <h3>Kobe Bryant</h3>
-                <p>Icône des Lakers, 5 titres, mentalité Mamba.</p>
-                <button class="btn-joueur">Voir ses actions</button>
-            </a>
-
-            <a class="player-card" href="https://www.youtube.com/watch?v=flm-cZ7r6eE" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Stephen_Curry_dribbling_2016_%28cropped%29.jpg">
-                <h3>Stephen Curry</h3>
-                <p>A révolutionné le tir à 3 points.</p>
-                <button class="btn-joueur">Voir ses actions</button>
-            </a>
-
-        </div>
-    </section>
-
-</body>
-</html>
+    </div>
+</section>
