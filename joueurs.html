@@ -3,19 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Joueurs Légendaires</title>
+  <title>Joueurs légendaires</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 
   <style>
-
     /* ===== FOND ANIMÉ ===== */
     body {
-      background-image: url('https://media.tenor.com/Z9HhYx---mAAAAAd/basketball-nba.gif');
+      background: url('https://media.tenor.com/Z9HhYx---mAAAAAd/basketball-nba.gif') no-repeat center center fixed;
       background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
     }
 
     .overlay {
@@ -27,7 +24,7 @@
     /* ===== GRID JOUEURS ===== */
     .players-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 2rem;
       margin-top: 2rem;
     }
@@ -96,41 +93,41 @@
 
       <header class="page-header">
         <h1>Joueurs légendaires</h1>
-        <p>Les figures mythiques de la NBA.</p>
+        <p>Une sélection de quelques grandes figures de la NBA.</p>
       </header>
 
       <section class="players-grid">
 
         <!-- Jordan -->
         <article class="player-card">
-          <img src="https://i.imgur.com/VV2kW8C.png" alt="Michael Jordan">
+          <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/893.png" alt="Michael Jordan">
           <h2>Michael Jordan</h2>
-          <p>GOAT, 6 titres NBA.</p>
-          <a class="actions-link" href="https://www.youtube.com/watch?v=LAr6oAKieHk" target="_blank">Voir ses actions</a>
+          <p>6 titres NBA avec les Bulls, légende absolue du basket.</p>
+          <a class="actions-link" href="https://www.youtube.com/watch?v=VnV4e0JpiFY" target="_blank">Voir ses actions</a>
         </article>
 
         <!-- LeBron -->
         <article class="player-card">
-          <img src="https://i.imgur.com/zmO7F0S.png" alt="LeBron James">
+          <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png" alt="LeBron James">
           <h2>LeBron James</h2>
-          <p>Longévité historique, champion 4 fois.</p>
-          <a class="actions-link" href="https://www.youtube.com/watch?v=4yMMg6Yb6xI" target="_blank">Voir ses actions</a>
+          <p>Longévité historique, champion Miami–Cleveland–Lakers.</p>
+          <a class="actions-link" href="https://www.youtube.com/watch?v=WJ2YjvNfVIo" target="_blank">Voir ses actions</a>
         </article>
 
         <!-- Kobe -->
         <article class="player-card">
-          <img src="https://i.imgur.com/3OMo9G9.png" alt="Kobe Bryant">
+          <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/977.png" alt="Kobe Bryant">
           <h2>Kobe Bryant</h2>
-          <p>5 titres, Mamba Mentality.</p>
+          <p>Icône des Lakers, 5 titres, mentalité Mamba.</p>
           <a class="actions-link" href="https://www.youtube.com/watch?v=8M8Yeq_QP2g" target="_blank">Voir ses actions</a>
         </article>
 
         <!-- Curry -->
         <article class="player-card">
-          <img src="https://i.imgur.com/o2M1o7F.png" alt="Stephen Curry">
+          <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/201939.png" alt="Stephen Curry">
           <h2>Stephen Curry</h2>
-          <p>Révolution du tir à 3 points.</p>
-          <a class="actions-link" href="https://www.youtube.com/watch?v=HStoFzzeUlc" target="_blank">Voir ses actions</a>
+          <p>A révolutionné le tir à 3 points.</p>
+          <a class="actions-link" href="https://www.youtube.com/watch?v=RMVw6N9OEzY" target="_blank">Voir ses actions</a>
         </article>
 
       </section>
