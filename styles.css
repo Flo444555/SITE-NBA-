@@ -578,5 +578,39 @@ body {
   position: relative;
   z-index: -1;
 }
+  /* === GALERIE FIX — MAINTIENT LES IMAGES PETITES === */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.gallery-grid figure {
+  background: #0f172a;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid figure:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0,0,0,0.55);
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 180px;   /* empêche les images géantes */
+  object-fit: cover;
+}
+
+.gallery-grid figcaption {
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  color: #cbd5e1;
+}
+
 
 
