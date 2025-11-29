@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="styles.css">
 
     <style>
-        /* --- FOND NBA --- */
+        /* ---- FOND NBA ---- */
         .section-joueurs {
           position: relative;
           padding: 60px 0;
-          background-image: url("https://i.imgur.com/i5xNf84.jpg");
+          background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/5/5a/NBA_75th_anniversary_logo.svg/1200px-NBA_75th_anniversary_logo.svg.png");
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
@@ -22,10 +22,9 @@
           content: "";
           position: absolute;
           inset: 0;
-          background: rgba(3, 7, 18, 0.75);
+          background: rgba(3, 7, 18, 0.78);
         }
 
-        /* --- CONTAINER GÉNÉRAL --- */
         .joueurs-container {
           position: relative;
           max-width: 1100px;
@@ -36,7 +35,6 @@
           padding: 0 20px;
         }
 
-        /* --- CARTES JOUEURS --- */
         .player-card {
           display: flex;
           flex-direction: column;
@@ -46,7 +44,7 @@
           border-radius: 20px;
           padding: 30px 20px 25px;
           text-decoration: none;
-          color: #ffffff;
+          color: white;
           transition: 0.2s;
         }
 
@@ -55,23 +53,22 @@
           box-shadow: 0 15px 30px rgba(0,0,0,0.4);
         }
 
-        /* --- IMAGES DES JOUEURS (TOUJOURS AFFICHÉES) --- */
         .player-card img {
-          width: 200px;
+          width: 210px;
           height: auto;
+          border-radius: 12px;
           margin-bottom: 15px;
         }
 
         .btn-joueur {
           border: none;
-          outline: none;
           padding: 10px 22px;
           border-radius: 999px;
           font-weight: 600;
           cursor: pointer;
           background: #ff7a1a;
           color: #1b1b1b;
-          margin-top: 10px;
+          margin-top: 12px;
         }
 
         @media (max-width: 768px) {
@@ -87,33 +84,29 @@
     <section class="section-joueurs">
         <div class="joueurs-container">
 
-            <!-- Michael Jordan -->
             <a class="player-card" href="https://www.youtube.com/watch?v=jbW4f60dCNA" target="_blank">
-                <img src="https://i.imgur.com/svjGAaP.png" alt="Michael Jordan">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Michael_Jordan_in_2014.jpg/600px-Michael_Jordan_in_2014.jpg">
                 <h3>Michael Jordan</h3>
                 <p>6 titres NBA avec les Bulls, légende absolue du basket.</p>
                 <button class="btn-joueur">Voir ses actions</button>
             </a>
 
-            <!-- LeBron James -->
             <a class="player-card" href="https://www.youtube.com/watch?v=b117a8_jALE" target="_blank">
-                <img src="https://i.imgur.com/Ie1byd4.png" alt="LeBron James">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/LeBron_James_Lakers.jpg">
                 <h3>LeBron James</h3>
                 <p>Longévité historique, champion à Miami, Cleveland et L.A.</p>
                 <button class="btn-joueur">Voir ses actions</button>
             </a>
 
-            <!-- Kobe Bryant -->
             <a class="player-card" href="https://www.youtube.com/watch?v=1fjhIWJSxfw" target="_blank">
-                <img src="https://i.imgur.com/nTG59HU.png" alt="Kobe Bryant">
+                <img src="https://upload.wikimedia.org/w.wikipedia/commons/5/56/Kobe_Bryant_2015.jpg">
                 <h3>Kobe Bryant</h3>
                 <p>Icône des Lakers, 5 titres, mentalité Mamba.</p>
                 <button class="btn-joueur">Voir ses actions</button>
             </a>
 
-            <!-- Stephen Curry -->
             <a class="player-card" href="https://www.youtube.com/watch?v=flm-cZ7r6eE" target="_blank">
-                <img src="https://i.imgur.com/oygJaoX.png" alt="Stephen Curry">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Stephen_Curry_dribbling_2016_%28cropped%29.jpg">
                 <h3>Stephen Curry</h3>
                 <p>A révolutionné le tir à 3 points.</p>
                 <button class="btn-joueur">Voir ses actions</button>
