@@ -611,6 +611,41 @@ body {
   font-size: 0.9rem;
   color: #cbd5e1;
 }
+/* === FIX TOTAL : FORÇAGE DE LA GALERIE === */
+
+.gallery-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)) !important;
+  gap: 20px !important;
+  margin-top: 20px !important;
+}
+
+.gallery-grid figure {
+  background: #0f172a !important;
+  border-radius: 14px !important;
+  overflow: hidden !important;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.gallery-grid figure:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 16px 35px rgba(0,0,0,0.55) !important;
+}
+
+.gallery-grid img {
+  width: 100% !important;
+  height: 180px !important;  /* EMPÊCHE LES IMAGES GÉANTES */
+  object-fit: cover !important;
+  display: block !important;
+}
+
+.gallery-grid figcaption {
+  padding: 10px 14px !important;
+  font-size: 0.9rem !important;
+  color: #cbd5e1 !important;
+  text-align: left !important;
+}
 
 
 
