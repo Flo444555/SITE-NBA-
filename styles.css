@@ -905,6 +905,126 @@ body.contact-page {
         transform: translateY(0);
     }
 }
+/* -------------------------
+   PAGE CONTACT NBA ULTRA STYLÉE
+   ------------------------- */
+
+body.contact-nba {
+    background-image: url("https://i.ibb.co/wRstJh9/NBA-Logos.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.contact-bg-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(5, 8, 22, 0.75);
+    backdrop-filter: blur(8px);
+    z-index: -1;
+}
+
+.contact-wrapper {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.contact-title {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 0.3rem;
+}
+
+.contact-subtitle {
+    text-align: center;
+    color: var(--muted);
+    margin-bottom: 2rem;
+}
+
+.contact-grid-nba {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 2rem;
+}
+
+/* FORMULAIRE */
+.contact-form-nba {
+    background: rgba(15, 23, 42, 0.5);
+    padding: 1.4rem;
+    border-radius: 16px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.4);
+    animation: fadeUp .7s ease forwards;
+    opacity: 0;
+}
+
+.contact-form-nba label {
+    display: block;
+    margin: 0.8rem 0 0.3rem;
+}
+
+.contact-form-nba input,
+.contact-form-nba textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 10px;
+    border: 1px solid #1f2937;
+    background: rgba(2, 6, 23, 0.8);
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.contact-form-nba button {
+    width: 100%;
+    margin-top: 0.4rem;
+}
+
+/* INFOS */
+.contact-info-nba {
+    background: rgba(15, 23, 42, 0.5);
+    padding: 1.4rem;
+    border-radius: 16px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.4);
+    animation: fadeUp .9s ease forwards;
+    opacity: 0;
+}
+
+.contact-info-nba h2 {
+    margin-bottom: 1rem;
+}
+
+.contact-info-nba p {
+    margin-bottom: 0.5rem;
+    color: var(--muted);
+}
+
+.contact-socials a {
+    font-size: 1.3rem;
+    margin-right: 10px;
+    color: var(--accent);
+    transition: transform .2s ease, opacity .2s ease;
+}
+
+.contact-socials a:hover {
+    transform: scale(1.2);
+    opacity: 0.9;
+}
+
+/* Animation */
+@keyframes fadeUp {
+    from { transform: translateY(40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive */
+@media(max-width: 850px) {
+    .contact-grid-nba {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 
 
