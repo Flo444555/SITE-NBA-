@@ -1,20 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact — NBA</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — NBA</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
- <body class="contact-page">
-<div class="contact-overlay"></div>
 
+<body class="contact-nba">
 
-  <!-- HEADER -->
-  <header class="site-header">
+<header class="site-header">
     <div class="container navwrap">
       <div class="logo">NBA<span class="logo-dot">.</span></div>
       <nav>
@@ -28,112 +26,68 @@
         </ul>
       </nav>
     </div>
-  </header>
+</header>
 
-  <!-- PAGE CONTACT -->
-  <main class="container page">
+<div class="contact-bg-overlay"></div>
 
-    <!-- INTRO -->
-    <header class="page-header">
-      <h1>Contact</h1>
-      <p>Une question sur le projet ou sur la NBA ? Je suis disponible pour répondre.</p>
-    </header>
+<main class="container contact-wrapper">
 
-    <!-- FORMULAIRE + INFORMATIONS -->
-    <section class="contact-grid">
+    <h1 class="contact-title">Contact NBA</h1>
+    <p class="contact-subtitle">Besoin d’informations ? Une question sur la NBA ou le projet ? Je suis disponible.</p>
 
-      <!-- FORMULAIRE -->
-      <form class="contact-form" action="#" method="post" novalidate>
-        <label>Nom
-          <input type="text" name="nom" placeholder="Votre nom complet">
-        </label>
+    <div class="contact-grid-nba">
 
-        <label>Email
-          <input type="email" name="email" placeholder="vous@example.com">
-        </label>
+        <!-- FORMULAIRE -->
+        <form class="contact-form-nba">
+            <label>Nom</label>
+            <input type="text" placeholder="Votre nom">
 
-        <label>Message
-          <textarea name="message" rows="6" placeholder="Votre message..."></textarea>
-        </label>
+            <label>Email</label>
+            <input type="email" placeholder="vous@example.com">
 
-        <button class="btn primary" type="submit" style="width:100%">Envoyer</button>
-      </form>
+            <label>Message</label>
+            <textarea rows="6" placeholder="Votre message..."></textarea>
 
-      <!-- INFORMATION -->
-      <aside class="contact-info">
-        <h2>Informations</h2>
+            <button type="submit" class="btn primary">Envoyer</button>
+        </form>
 
-        <p><i class="fa-solid fa-location-dot"></i> 123 Rue du Basket, Paris</p>
-        <p><i class="fa-solid fa-phone"></i> +33 1 23 45 67 89</p>
-        <p><i class="fa-regular fa-envelope"></i> nba-projet@example.com</p>
+        <!-- INFOS -->
+        <div class="contact-info-nba">
+            <h2>Informations</h2>
+            <p><i class="fa-solid fa-location-dot"></i> Paris, France</p>
+            <p><i class="fa-solid fa-envelope"></i> nba-projet@example.com</p>
+            <p><i class="fa-solid fa-phone"></i> +33 1 23 45 67 89</p>
 
-        <div class="social">
-          <a href="#"><i class="fa-brands fa-twitter"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <h3>Réseaux</h3>
+            <div class="contact-socials">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
         </div>
-      </aside>
 
-    </section>
-
-    <!-- HORAIRES DU SUPPORT -->
-    <section class="contact-extra">
-      <h3>Horaires du support</h3>
-      <ul>
-        <li>Lundi – Vendredi : 9h → 18h</li>
-        <li>Samedi : 10h → 14h</li>
-        <li>Dimanche : Fermé</li>
-      </ul>
-    </section>
-
-    <!-- IMAGE LOCALISATION -->
-    <section class="contact-map">
-      <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?w=1200" alt="Stade NBA">
-    </section>
-    <section class="usa-map-section">
-    <h3>Localisation des franchises NBA</h3>
-    <div class="usa-map">
-        <img src="https://i.ibb.co/nCvrrL5/usa-silhouette.png" alt="Carte USA">
-
-        <span class="map-dot dot-west" title="Golden State Warriors"></span>
-        <span class="map-dot dot-la" title="Los Angeles Lakers"></span>
-        <span class="map-dot dot-texas" title="Spurs / Dallas"></span>
-        <span class="map-dot dot-chicago" title="Chicago Bulls"></span>
-        <span class="map-dot dot-ny" title="New York Knicks"></span>
     </div>
-</section>
 
+</main>
 
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
+<footer class="site-footer">
     <div class="container footer-grid">
-
-      <div>
-        <h4>Projet Master 1</h4>
-        <p>Site statique sur l'histoire de la NBA (HTML/CSS uniquement).</p>
-      </div>
-
-      <div>
-        <h4>Pages</h4>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="histoire.html">Histoire</a></li>
-          <li><a href="equipes.html">Franchises</a></li>
-          <li><a href="joueurs.html">Joueurs</a></li>
-          <li><a href="galerie.html">Galerie</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4>Contact</h4>
-        <p><i class="fa-regular fa-envelope"></i> nba-projet@example.com</p>
-      </div>
-
+        <div>
+            <h4>Projet Master 1</h4>
+            <p>Site statique sur l'histoire de la NBA.</p>
+        </div>
+        <div>
+            <h4>Navigation</h4>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="histoire.html">Histoire</a></li>
+                <li><a href="equipes.html">Franchises</a></li>
+                <li><a href="joueurs.html">Joueurs</a></li>
+            </ul>
+        </div>
     </div>
-
-    <div class="copyright">© 2025 – Histoire de la NBA</div>
-  </footer>
+    <div class="copyright">© 2025 – NBA Legends</div>
+</footer>
 
 </body>
 </html>
