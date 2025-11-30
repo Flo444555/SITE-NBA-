@@ -1,48 +1,38 @@
-/* PAGE JOUEURS */
-.joueurs-page {
-    background: #0d0f1a;
-    color: white;
-    padding: 40px;
-    font-family: Arial;
-}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Joueurs NBA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="joueurs-page">
 
-.titre-page {
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 40px;
-    color: #f39c12;
-}
+    <h1 class="titre-page">Joueurs Légendaires</h1>
 
-.joueurs-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
-    flex-wrap: wrap;
-}
+    <div class="joueurs-container">
 
-.player-card {
-    background: #141622;
-    padding: 20px;
-    width: 280px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 0 15px #00000050;
-    transition: transform 0.2s;
-}
+        <!-- Michael Jordan -->
+        <div class="player-card">
+            <img src="images/jordan.png" alt="Michael Jordan">
+            <h2>Michael Jordan</h2>
+            <p>6× champion NBA avec les Bulls, légende absolue du basket.</p>
+        </div>
 
-.player-card:hover {
-    transform: scale(1.05);
-}
+        <!-- LeBron James -->
+        <div class="player-card">
+            <img src="images/lebron.png" alt="LeBron James">
+            <h2>LeBron James</h2>
+            <p>Longévité historique, champion à Miami, Cleveland et LA.</p>
+        </div>
 
-.player-card img {
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-}
+        <!-- Kobe Bryant -->
+        <div class="player-card">
+            <img src="images/kobe.png" alt="Kobe Bryant">
+            <h2>Kobe Bryant</h2>
+            <p>Icône des Lakers, 5 titres NBA, l’un des plus grands scoreurs.</p>
+        </div>
 
-.player-card h2 {
-    margin-top: 15px;
-    margin-bottom: 5px;
-    color: #f1c40f;
-}
+    </div>
+
+</body>
+</html>
