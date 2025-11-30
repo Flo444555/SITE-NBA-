@@ -1256,6 +1256,106 @@ body.contact-clean {
     color: #fff;
 }
 
+/* ======== BANNIÈRE HAUT ======== */
+
+.contact-banner {
+    text-align: center;
+    padding: 40px 0 20px;
+    color: white;
+}
+
+.contact-banner h1 {
+    font-size: 3rem;
+    margin-bottom: 8px;
+}
+
+.contact-banner p {
+    color: #d1d5db;
+}
+
+
+/* ======== LAYOUT ======== */
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 2rem;
+    margin-top: 20px;
+    padding-bottom: 50px;
+}
+
+
+/* ======== CARTES ======== */
+
+.contact-card {
+    background: #0f172a;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.45);
+}
+
+.contact-card h2 {
+    margin-bottom: 18px;
+}
+
+
+/* ======== FORMULAIRE ======== */
+
+.contact-card input,
+.contact-card textarea {
+    width: 100%;
+    background: #020617;
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.contact-card textarea {
+    resize: vertical;
+}
+
+
+/* ======== RÉSEAUX ======== */
+
+.socials a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #1e293b;
+    border-radius: 10px;
+    margin-right: 8px;
+    color: white;
+    font-size: 1.3rem;
+    transition: .2s;
+}
+
+.socials a:hover {
+    background: #f97316;
+    color: #111;
+}
+
+
+/* ======== BOUTON ======== */
+
+.btn.primary {
+    background: #f97316;
+    color: black;
+    font-weight: 700;
+    padding: 12px 20px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn.primary:hover {
+    background: #fb923c;
+}
 
 
 
