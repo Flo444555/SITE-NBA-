@@ -1,4 +1,4 @@
-/* ---- PAGE JOUEURS ---- */
+/* ---- STYLE GLOBAL ---- */
 
 body {
     background: #0d0f1a;
@@ -8,39 +8,44 @@ body {
     padding: 40px 0;
 }
 
-/* Titre */
+/* ---- TITRE ---- */
+
 .titre-joueurs {
     text-align: center;
     font-size: 36px;
-    margin-bottom: 40px;
-}
-
-/* Ligne joueur */
-.joueur {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    width: 70%;
-    margin: 0 auto 40px auto;
-}
-
-/* Image */
-.joueur img {
-    width: 150px;
-    border-radius: 10px;
-    background: #141622;
-    padding: 5px;
-}
-
-/* Texte */
-.texte-joueur h2 {
-    margin: 0;
-    font-size: 24px;
+    margin-bottom: 50px;
     color: white;
 }
 
+/* ---- BLOC JOUEUR ---- */
+
+.joueur {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    width: 65%;
+    margin: 0 auto 50px auto;
+}
+
+/* ---- IMAGE JOUEUR ---- */
+
+.joueur img {
+    width: 150px;
+    border-radius: 10px;
+    background: none;
+    padding: 0;
+}
+
+/* ---- TEXTE JOUEUR ---- */
+
+.texte-joueur h2 {
+    margin: 0 0 5px 0;
+    font-size: 26px;
+    font-weight: bold;
+}
+
 .texte-joueur p {
-    margin-top: 5px;
+    margin: 0;
     color: #cfcfcf;
-    line-height: 1.4;
+    line-height: 1.5;
 }
