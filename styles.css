@@ -1024,6 +1024,108 @@ body.contact-nba {
         grid-template-columns: 1fr;
     }
 }
+/* ================================
+   PAGE CONTACT NBA — VERSION FIX
+================================ */
+
+body.contact-nba-page {
+    position: relative;
+    background: #050816;
+}
+
+/* FOND IMAGE SÉCURISÉ */
+.contact-nba-bg {
+    position: fixed;
+    inset: 0;
+    background-image: url("https://images.unsplash.com/photo-1504450758481-7338eba7524a?q=80&w=1600");
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+}
+
+/* OVERLAY OBSCURCI POUR LE TEXTE */
+.contact-nba-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(5, 8, 22, 0.80);
+    backdrop-filter: blur(4px);
+    z-index: -1;
+}
+
+/* CONTENU */
+.contact-nba-wrapper {
+    position: relative;
+    z-index: 5;
+    padding-top: 30px;
+}
+
+.contact-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.contact-subtitle {
+    text-align: center;
+    color: #cbd5e1;
+    margin-bottom: 25px;
+}
+
+.contact-nba-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 2rem;
+}
+
+.contact-nba-form,
+.contact-nba-info {
+    background: rgba(15, 23, 42, 0.85);
+    padding: 1.5rem;
+    border-radius: 14px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+}
+
+.contact-nba-form input,
+.contact-nba-form textarea {
+    width: 100%;
+    margin-top: 0.4rem;
+    margin-bottom: 1rem;
+    background: #020617;
+    border: 1px solid #1f2937;
+    border-radius: 8px;
+    padding: 0.7rem;
+    color: white;
+}
+
+.contact-nba-info p {
+    margin-bottom: 8px;
+    color: #cbd5e1;
+}
+
+.contact-socials a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    background: #1e293b;
+    color: white;
+    border-radius: 8px;
+    margin-right: 8px;
+    transition: 0.2s;
+}
+
+.contact-socials a:hover {
+    background: #f97316;
+    transform: translateY(-3px);
+}
+
+@media(max-width: 850px) {
+    .contact-nba-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 
