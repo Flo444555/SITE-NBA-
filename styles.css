@@ -760,6 +760,26 @@ position: relative;
 .joueurs-page .hero {
     display: none !important;
 }
+.funfact-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: #0b1623;
+    border-radius: 14px;
+    padding: 20px;
+    min-height: 180px;
+}
+
+.funfact-card h3 {
+    color: #f97316;
+    margin-bottom: 8px;
+}
+
+.funfact-card p {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+}
 
 
 
