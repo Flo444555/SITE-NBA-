@@ -1,74 +1,48 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joueurs Légendaires</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+/* PAGE JOUEURS */
+.joueurs-page {
+    background: #0d0f1a;
+    color: white;
+    padding: 40px;
+    font-family: Arial;
+}
 
-<body class="joueurs-page">
+.titre-page {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #f39c12;
+}
 
+.joueurs-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
 
-<header class="site-header">
-    <div class="container navwrap">
-        <div class="logo">NBA<span class="logo-dot">.</span></div>
-        <ul class="main-nav">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="histoire.html">Histoire</a></li>
-            <li><a href="joueurs.html" class="active">Joueurs</a></li>
-            <li><a href="galerie.html">Galerie</a></li>
-            <li><a href="équipements.html">Équipements</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>
-</header>
+.player-card {
+    background: #141622;
+    padding: 20px;
+    width: 280px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 15px #00000050;
+    transition: transform 0.2s;
+}
 
-<div class="page">
+.player-card:hover {
+    transform: scale(1.05);
+}
 
-    <section class="section-joueurs">
-        <div class="joueurs-container">
+.player-card img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
 
-            <a class="player-card" href="https://www.youtube.com/watch?v=jbW4f60dCNA" target="_blank">
-                <img src="https://cdn.nba.com/headshots/nba/latest/260x190/893.png" alt="Michael Jordan">
-                <h3>Michael Jordan</h3>
-                <p>6 titres NBA avec les Bulls, légende absolue du basket.</p>
-                <button class="btn-joueur">Voir ses actions</button>
-            </a>
-
-            <a class="player-card" href="https://www.youtube.com/watch?v=b117a8_jALE" target="_blank">
-                <img src="https://cdn.nba.com/headshots/nba/latest/260x190/2544.png" alt="LeBron James">
-                <h3>LeBron James</h3>
-                <p>Longévité historique, champion à Miami, Cleveland et LA.</p>
-                <button class="btn-joueur">Voir ses actions</button>
-            </a>
-
-            <a class="player-card" href="https://www.youtube.com/watch?v=1fjhIWJSxfw" target="_blank">
-                <img src="https://cdn.nba.com/headshots/nba/latest/260x190/977.png" alt="Kobe Bryant">
-                <h3>Kobe Bryant</h3>
-                <p>Icône des Lakers, 5 titres, mentalité Mamba.</p>
-                <button class="btn-joueur">Voir ses actions</button>
-            </a>
-
-            <a class="player-card" href="https://www.youtube.com/watch?v=flm-cZ7r6eE" target="_blank">
-                <img src="https://cdn.nba.com/headshots/nba/latest/260x190/201939.png" alt="Stephen Curry">
-                <h3>Stephen Curry</h3>
-                <p>A révolutionné le tir à 3 points.</p>
-                <button class="btn-joueur">Voir ses actions</button>
-            </a>
-
-        </div>
-    </section>
-
-</div>
-
-<footer class="site-footer">
-    <div class="container footer-grid">
-        <div class="copyright">
-            © 2025 NBA Legends — Tous droits réservés.
-        </div>
-    </div>
-</footer>
-
-</body>
-</html>
+.player-card h2 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #f1c40f;
+}
