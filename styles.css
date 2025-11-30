@@ -1126,6 +1126,78 @@ body.contact-nba-page {
         grid-template-columns: 1fr;
     }
 }
+/* ===== PAGE CONTACT CLEAN ===== */
+
+body.contact-clean {
+    background: #050816;
+}
+
+.clean-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.clean-subtitle {
+    font-size: 1rem;
+    color: #cbd5e1;
+    margin-bottom: 25px;
+}
+
+.clean-contact-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 2rem;
+}
+
+.clean-form,
+.clean-info {
+    background: #0f172a;
+    padding: 1.5rem;
+    border-radius: 14px;
+    box-shadow: 0 10px 26px rgba(0,0,0,0.35);
+}
+
+/* FORM */
+.clean-form input,
+.clean-form textarea {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: #091124;
+    color: white;
+}
+
+.clean-info p {
+    margin-bottom: 8px;
+    color: #cbd5e1;
+}
+
+.clean-socials a {
+    background: #1e293b;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    transition: 0.2s;
+}
+
+.clean-socials a:hover {
+    background: #f97316;
+    transform: translateY(-3px);
+}
+
+@media(max-width: 800px) {
+    .clean-contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 
 
