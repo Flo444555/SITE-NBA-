@@ -756,6 +756,11 @@ position: relative;
 .section-joueurs {
     background: none !important;
 }
+/* Désactive complètement le hero sur la page Joueurs */
+.joueurs-page .hero {
+    display: none !important;
+}
+
 
 
 
