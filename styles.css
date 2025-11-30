@@ -785,8 +785,41 @@ position: relative;
     grid-template-columns: repeat(4, 1fr) !important;
     gap: 1rem;
 }
+/* EXTRA CONTACT CARDS */
 
+.contact-extra {
+    background: var(--card);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    margin-top: 2rem;
+}
 
+.contact-extra h3 {
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+}
+
+.contact-extra ul {
+    list-style: none;
+}
+
+.contact-extra ul li {
+    color: var(--muted);
+    padding: 4px 0;
+}
+
+.contact-map {
+    margin-top: 2rem;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.4);
+}
+
+.contact-map img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
 
 
 
