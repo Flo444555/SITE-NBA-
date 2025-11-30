@@ -780,6 +780,11 @@ position: relative;
     color: #cbd5e1;
     font-size: 0.95rem;
 }
+.teams-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 1rem;
+}
 
 
 
