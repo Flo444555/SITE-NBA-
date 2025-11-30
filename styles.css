@@ -751,6 +751,15 @@ body {
 .gallery-center {
   width: 320px;
 }
+/* SUPPRESSION TOTALE DU FOND JOUEURS */
+.section-joueurs::before {
+    display: none !important;
+}
+
+.section-joueurs {
+    background: none !important;
+}
+
 
 
 
