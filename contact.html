@@ -1,64 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact – NBA</title>
-
-    <!-- Montserrat -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="contact_fix.css"> <!-- FICHIER QUI FORCE LE BON DESIGN -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — NBA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
-<body class="contact-page">
-
-    <div class="contact-banner">
-        <h1>Contact</h1>
-        <p>Une question sur le projet ou la NBA ? Je suis là pour répondre.</p>
+<body>
+  <header class="site-header">
+    <div class="container navwrap">
+      <div class="logo">NBA<span class="logo-dot">.</span></div>
+      <nav>
+        <ul class="main-nav">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="histoire.html">Histoire</a></li>
+          <li><a href="equipes.html">Franchises</a></li>
+          <li><a href="joueurs.html">Joueurs</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <div class="contact-container">
+  <main class="container page">
+    <header class="page-header">
+      <h1>Contact</h1>
+      <p>Formulaire fictif pour le projet (aucun envoi réel).</p>
+    </header>
 
-        <!-- FORMULAIRE -->
-        <div class="contact-card">
-            <h2>Envoyer un message</h2>
+    <section class="contact-grid">
+      <form class="contact-form" action="#" method="post" novalidate>
+        <label>Nom
+          <input type="text" name="nom" placeholder="Votre nom complet">
+        </label>
+        <label>Email
+          <input type="email" name="email" placeholder="vous@example.com">
+        </label>
+        <label>Message
+          <textarea name="message" rows="6" placeholder="Votre message..."></textarea>
+        </label>
+        <button class="btn primary" type="submit">Envoyer</button>
+      </form>
 
-            <form>
-                <label>Nom</label>
-                <input type="text" placeholder="Votre nom">
-
-                <label>Email</label>
-                <input type="email" placeholder="vous@example.com">
-
-                <label>Message</label>
-                <textarea rows="6" placeholder="Votre message..."></textarea>
-
-                <button class="btn primary">Envoyer</button>
-            </form>
+      <aside class="contact-info">
+        <h2>Informations</h2>
+        <p><i class="fa-solid fa-location-dot"></i> 123 Rue du Basket, Paris</p>
+        <p><i class="fa-solid fa-phone"></i> +33 1 23 45 67 89</p>
+        <p><i class="fa-regular fa-envelope"></i> nba-projet@example.com</p>
+        <div class="social">
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
         </div>
+      </aside>
+    </section>
+  </main>
 
-        <!-- INFOS -->
-        <div class="contact-card">
-            <h2>Informations</h2>
-
-            <p><i class="fa-solid fa-location-dot"></i> Paris, France</p>
-            <p><i class="fa-solid fa-envelope"></i> nba-projet@example.com</p>
-            <p><i class="fa-solid fa-phone"></i> +33 1 23 45 67 89</p>
-
-            <h3>Réseaux</h3>
-            <div class="socials">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-        </div>
-
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Projet Master 1</h4>
+        <p>Site statique sur l'histoire de la NBA (HTML/CSS uniquement).</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="histoire.html">Histoire</a></li>
+          <li><a href="equipes.html">Franchises</a></li>
+          <li><a href="joueurs.html">Joueurs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><i class="fa-regular fa-envelope"></i> nba-projet@example.com</p>
+      </div>
     </div>
-
+    <div class="copyright">© 2025 – Histoire de la NBA</div>
+  </footer>
 </body>
 </html>
