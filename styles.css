@@ -77,5 +77,49 @@
 .joueur p {
     color: #cfcfcf;
     margin-top: 5px;
+
+}
+/* ---- PAGE JOUEURS ---- */
+
+.joueurs-page {
+    background-color: #0d0f1a;
+    color: white;
+    padding: 40px 0;
+}
+
+/* Titre */
+.titre-joueurs {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+/* Ligne joueur */
+.joueur {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 70%;
+    margin: 0 auto 40px auto;
+}
+
+/* Image */
+.joueur img {
+    width: 140px;
+    border-radius: 10px;
+    background: #141622;
+    padding: 5px;
+}
+
+/* Texte */
+.texte-joueur h2 {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+}
+
+.texte-joueur p {
+    margin-top: 5px;
+    color: #cfcfcf;
 }
 
