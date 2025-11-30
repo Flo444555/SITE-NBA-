@@ -5,36 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact — NBA</title>
 
-    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
 <header class="site-header">
     <div class="container navwrap">
-      <div class="logo">NBA<span class="logo-dot">.</span></div>
-      <nav>
-        <ul class="main-nav">
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="histoire.html">Histoire</a></li>
-          <li><a href="equipes.html">Franchises</a></li>
-          <li><a href="joueurs.html">Joueurs</a></li>
-          <li><a href="galerie.html">Galerie</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-      </nav>
+        <div class="logo">NBA<span class="logo-dot">.</span></div>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="histoire.html">Histoire</a></li>
+                <li><a href="equipes.html">Franchises</a></li>
+                <li><a href="joueurs.html">Joueurs</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
     </div>
 </header>
 
-<section class="contact-clean">
-    <div class="contact-container">
+<div class="contact-banner">
+    <h1>Contact</h1>
+    <p>Une question sur le projet ou la NBA ? Je suis là pour répondre.</p>
+</div>
 
-        <!-- FORMULAIRE -->
-        <div class="contact-left">
-            <h1>Contact</h1>
+<main class="container contact-container">
 
+    <!-- FORMULAIRE -->
+    <section class="contact-card left">
+        <h2>Envoyer un message</h2>
+
+        <form>
             <label>Nom</label>
             <input type="text" placeholder="Votre nom">
 
@@ -44,28 +49,27 @@
             <label>Message</label>
             <textarea rows="6" placeholder="Votre message..."></textarea>
 
-            <button class="btn primary">Envoyer</button>
+            <button type="submit" class="btn primary">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- INFORMATIONS -->
+    <section class="contact-card right">
+        <h2>Informations</h2>
+
+        <p><i class="fa-solid fa-location-dot"></i> Paris, France</p>
+        <p><i class="fa-solid fa-envelope"></i> nba-projet@example.com</p>
+        <p><i class="fa-solid fa-phone"></i> +33 1 23 45 67 89</p>
+
+        <h3>Réseaux</h3>
+        <div class="socials">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
         </div>
+    </section>
 
-        <!-- INFORMATIONS -->
-        <div class="contact-right">
-            <h2>Informations</h2>
-
-            <p><i class="fa-solid fa-location-dot"></i> Paris, France</p>
-            <p><i class="fa-regular fa-envelope"></i> nba-projet@example.com</p>
-            <p><i class="fa-solid fa-phone"></i> +33 1 23 45 67 89</p>
-
-            <h3>Réseaux</h3>
-
-            <div class="contact-socials">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-        </div>
-
-    </div>
-</section>
+</main>
 
 <footer class="site-footer">
     <div class="container footer-grid">
@@ -73,6 +77,7 @@
             <h4>Projet Master 1</h4>
             <p>Site statique sur l'histoire de la NBA.</p>
         </div>
+
         <div>
             <h4>Navigation</h4>
             <ul>
